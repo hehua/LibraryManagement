@@ -566,3 +566,12 @@ Processing PostsController#show (for 127.0.0.1 at 2010-10-17 21:29:04) [GET]
 Rendering template within layouts/posts
 Rendering posts/show
 Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-10-17 21:44:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODkxODQxZWY0MmEzZWU4ODk2YWY5M2FiN2JlZDI2%0AZjgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f5d22c39d21a7ec725284af3bb696a259b7a43cc
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;35;1mPost Load (0.000000)[0m   [0mSELECT * FROM posts [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/posts]
