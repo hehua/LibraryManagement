@@ -1,0 +1,22 @@
+<h1>Listing pists</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+
+<% for pist in @pists %>
+  <tr>
+    <td><%=h pist.title %></td>
+    <td><%=h pist.body %></td>
+    <td><%= link_to 'Show', pist %></td>
+    <td><%= link_to 'Edit', edit_pist_path(pist) %></td>
+    <td><%= link_to 'Destroy', pist, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New pist', new_pist_path %>

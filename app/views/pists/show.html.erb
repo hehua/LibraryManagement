@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @pist.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @pist.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_pist_path(@pist) %> |
+<%= link_to 'Back', pists_path %>

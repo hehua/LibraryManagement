@@ -1,0 +1,22 @@
+<h1>Editing pist</h1>
+
+<%= error_messages_for :pist %>
+
+<% form_for(@pist) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @pist %> |
+<%= link_to 'Back', pists_path %>
